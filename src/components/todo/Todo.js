@@ -7,7 +7,8 @@ const ToDo = props => {
   const { todo } = props
   return (
     <div className="ToDo">
-      <h3>{todo.name}</h3>
+      <p>X</p>
+      <h2>{todo.name}</h2>
       <p>{todo.text}</p>
       <p>Importance: {todo.importance}</p>
     </div>

@@ -1,14 +1,13 @@
 import React from 'react';
 
 //styling
-import './Todo.css';
+import './ToDo.css';
 
-const TodoContainer = () => {
+const ToDoContainer = () => {
   return (
-    <div className="TodoContainer">
-
+    <div className="ToDoContainer">
     </div>
   );
 }
 
-export default TodoContainer;
+export default ToDoContainer;

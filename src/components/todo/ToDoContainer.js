@@ -3,6 +3,9 @@ import React from 'react';
 //styling
 import './ToDo.css';
 
+// components
+import ToDo from './ToDo'
+
 const ToDoContainer = props => {
     const { topic } = props
 
@@ -10,7 +13,7 @@ const ToDoContainer = props => {
         <div className="ToDoContainer">
             {topic.todos && topic.todos.map(todo => {
                 return (
-                    <div key={`todo-${todo.id}`}>{todo.name} </div>
+                    <ToDo key={`todo-${todo.id}`} todo={todo} />
                 )
             })}
         </div>

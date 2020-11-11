@@ -9,7 +9,7 @@ import NewToDoContainer from '../todonew/NewToDoContainer';
 
 
 const ToDoContainer = props => {
-    const { topic, topics } = props
+    const { topic, topics, getTopics, setTopic } = props
 
     return (
         <div className="ToDoContainer">
@@ -18,7 +18,7 @@ const ToDoContainer = props => {
                     return <ToDo key={`todo-${todo.id}`} todo={todo} />
                 })}
             </div>
-            <NewToDoContainer topics={topics}/>
+            <NewToDoContainer getTopics={getTopics} topics={topics} setTopic={setTopic}/>
         </div>
     );
 }

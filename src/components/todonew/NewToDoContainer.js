@@ -6,7 +6,7 @@ import './NewToDo.css';
 // components
 
 const NewToDoContainer = props => {
-    const { topics } = props;
+    const { topics, getTopics, setTopic } = props;
     const [fTopic, setFTopic] = useState(1)
     const [toDo, setToDo] = useState("")
     const [details, setDetails] = useState("")
@@ -25,9 +25,18 @@ const NewToDoContainer = props => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        fetch('http://localhost:3000/topics', reqObj)
+
+        fetch('http://localhost:3000/todos', reqObj)
         .then(r=>r.json())
-        .then(data => console.log(data))
+        .then(tBack => {
+            getTopics(tBack)
+            setTopic(tBack.filter(t => t.id === fTopic)[0])
+            // reset form
+            setFTopic(1)
+            setToDo("")
+            setDetails("")
+            setImportance(1)        
+        })
     }
 
     return (
@@ -36,7 +45,7 @@ const NewToDoContainer = props => {
             <label>
                 topic:
                 <br/>
-                <select value={fTopic} onChange={e=>setFTopic(e.target.value)}>
+                <select value={fTopic} onChange={e=>setFTopic(parseInt(e.target.value))}>
                     {topics.map(tpc => <option key={`s-${tpc.id}`} value={tpc.id}>{tpc.name}</option>)}
                 </select>
             </label>

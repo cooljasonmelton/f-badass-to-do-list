@@ -26,7 +26,10 @@ const App = () => {
     <div className="App">
       <Menu/>
       <TopicContainer topics={topics} setTopic={setTopic}/>
-      <ToDoContainer topic={topic} topics={topics}/>
+      <ToDoContainer topic={topic} 
+        topics={topics} 
+        getTopics={getTopics}
+        setTopic={setTopic}/>
     </div>
   );
 }

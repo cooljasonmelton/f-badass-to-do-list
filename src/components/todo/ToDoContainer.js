@@ -15,7 +15,7 @@ const ToDoContainer = props => {
         <div className="ToDoContainer">
             <div className="todo-c">
                 {topic.todos && topic.todos.map(todo => {
-                    return <ToDo key={`todo-${todo.id}`} todo={todo} />
+                    return <ToDo key={`todo-${todo.id}`} todo={todo} getTopics={getTopics} setTopic={setTopic}/>
                 })}
             </div>
             <NewToDoContainer getTopics={getTopics} topics={topics} setTopic={setTopic}/>

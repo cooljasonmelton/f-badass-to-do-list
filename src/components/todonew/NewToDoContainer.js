@@ -32,7 +32,6 @@ const NewToDoContainer = props => {
             getTopics(tBack)
             setTopic(tBack.filter(t => t.id === fTopic)[0])
             // reset form
-            setFTopic(1)
             setToDo("")
             setDetails("")
             setImportance(1)        
@@ -41,7 +40,7 @@ const NewToDoContainer = props => {
 
     return (
         <form className="NewToDoContainer" onSubmit={handleSubmit}>
-            <h1>Create To Do</h1>
+            <h2>Create To Do</h2>
             <label>
                 topic:
                 <br/>
@@ -52,7 +51,7 @@ const NewToDoContainer = props => {
             <label>
                 to do:
                 <br/>
-                <input type="text" name="name" value={toDo} onChange={e => setToDo(e.target.value)} />
+                <textarea type="text" name="name" value={toDo} onChange={e => setToDo(e.target.value)} />
             </label>
             <label>
                 details:

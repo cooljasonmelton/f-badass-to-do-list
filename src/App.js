@@ -10,7 +10,7 @@ import ToDoContainer from './components/todo/ToDoContainer';
 
 const App = () => {
   const [topic, setTopic] = useState({})
-  console.log(topic)
+
   return (
     <div className="App">
       <Menu/>

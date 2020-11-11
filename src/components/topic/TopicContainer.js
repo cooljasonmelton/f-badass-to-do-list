@@ -3,6 +3,9 @@ import React, {useEffect, useState} from 'react';
 //styling
 import './Topic.css';
 
+//components 
+import Topic from './Topic';
+
 const TopicContainer = props => {
     const { setTopic } = props
     const [topics, getTopics] = useState([])
@@ -17,13 +20,10 @@ const TopicContainer = props => {
     return (
         <div className="TopicContainer">
             {topics.map(topic => {
-                return(
-                    <button key={`topic-${topic.id}`}
-                        onClick={()=>setTopic(topic)}> 
-                        {topic.name} 
-                    </button>
-                ) 
-            })}
+                return (
+                    <Topic key={`topic-${topic.id}`}
+                        topic={topic} 
+                        setTopic={setTopic}/>)})}
         </div>
     );
 }

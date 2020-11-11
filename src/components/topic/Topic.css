@@ -3,7 +3,14 @@
     display: flex;
 }
 
-.TopicContainer > button {
+.Topic {
     margin: 1rem;
-    padding: 0.4rem;
+    padding: 1rem;
+    background-color: #FF206E;
+    cursor: pointer;
+}
+.Topic:hover {
+    /* opacity: 0.9; */
+    background-color: #E0004F;
+    color: #EBEBEB;
 }

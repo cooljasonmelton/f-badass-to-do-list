@@ -52,7 +52,7 @@ const NewToDoContainer = props => {
             <label>
                 to do:
                 <br/>
-                <input type="text" name="name" value={toDo} onChange={e => setToDo(e.target.value)} />
+                <textarea type="text" name="name" value={toDo} onChange={e => setToDo(e.target.value)} />
             </label>
             <label>
                 details:

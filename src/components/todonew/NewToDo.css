@@ -1,5 +1,5 @@
 .NewToDoContainer{
-    width: 25%;
+    width: 30%;
     background-color: #41EAD4;
     margin: 1rem;
 
@@ -23,17 +23,14 @@
     width: 90%;
 }
 
-.NewToDoContainer > label > input {
-    padding: 0.5rem;
-    height: 2rem;
-    width: 90%;
-}
-
 .NewToDoContainer > label > textarea {
     padding: 0.5rem;
+    height: 3rem;
     width: 90%;
-    height: 10rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
 .NewToDoContainer > label > select {
     font-size: 1.2rem;
 }

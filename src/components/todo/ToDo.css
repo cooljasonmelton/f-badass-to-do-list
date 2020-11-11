@@ -3,7 +3,7 @@
 }
 
 .todo-c{
-    width: 75%;
+    width: 65%;
     display: grid;
     grid-template-columns: repeat(3, 17rem);
     grid-template-rows: repeat(3, 12rem);

@@ -32,7 +32,6 @@ const NewToDoContainer = props => {
             getTopics(tBack)
             setTopic(tBack.filter(t => t.id === fTopic)[0])
             // reset form
-            setFTopic(1)
             setToDo("")
             setDetails("")
             setImportance(1)        

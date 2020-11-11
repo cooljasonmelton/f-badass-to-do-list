@@ -8,7 +8,7 @@ const Topic = props => {
     return (
         <div className="Topic"
             onClick={()=>setTopic(topic)}> 
-            <h3>{topic.name}</h3>
+            <h3>{topic.name} <span class='notbold'>{" (" + topic.todos.length +")"}</span></h3>
         </div>
     );
 }

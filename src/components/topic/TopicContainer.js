@@ -13,8 +13,11 @@ const TopicContainer = props => {
     useEffect(()=> {
         fetch("http://localhost:3000/topics")
         .then(r=>r.json())
-        .then(topics => getTopics(topics))
-    }, []);
+        .then(topics => {
+            getTopics(topics)
+            setTopic(topics[0])
+        })
+    }, [setTopic]);
 
 
     return (

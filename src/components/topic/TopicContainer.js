@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 //styling
 import './Topic.css';
@@ -7,18 +7,7 @@ import './Topic.css';
 import Topic from './Topic';
 
 const TopicContainer = props => {
-    const { setTopic } = props
-    const [topics, getTopics] = useState([])
-
-    useEffect(()=> {
-        fetch("http://localhost:3000/topics")
-        .then(r=>r.json())
-        .then(topics => {
-            getTopics(topics)
-            setTopic(topics[0])
-        })
-    }, [setTopic]);
-
+    const { topics, setTopic } = props
 
     return (
         <div className="TopicContainer">

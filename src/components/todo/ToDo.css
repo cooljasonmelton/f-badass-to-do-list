@@ -1,0 +1,26 @@
+.ToDoContainer{
+    display: flex;
+}
+
+.todo-c{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ToDo{
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 2px #FFFFFF;
+
+    padding: 1rem;
+    background-color: #FBFF12;
+
+    color: #0C0F0A;
+    cursor: pointer;
+}
+
+/* .ToDo:hover {
+    background-color: #DDE000;
+    box-shadow: 1px 2px 2px #EBEBEB;
+} */

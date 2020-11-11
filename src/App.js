@@ -1,3 +1,5 @@
+import React from 'react';
+
 //styling
 import './App.css';
 

@@ -41,7 +41,7 @@ const NewToDoContainer = props => {
 
     return (
         <form className="NewToDoContainer" onSubmit={handleSubmit}>
-            <h1>Create To Do</h1>
+            <h2>Create To Do</h2>
             <label>
                 topic:
                 <br/>

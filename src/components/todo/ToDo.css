@@ -1,5 +1,7 @@
 .ToDoContainer{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .todo-c{

@@ -13,11 +13,11 @@
     color: #0C0F0A;
 }
 
-.NewToDoContainer > h1 {
+.NewToDoContainer > h2 {
     padding-top: 2rem;
 }
 .NewToDoContainer > label{
-    margin: 1rem;    
+    margin: 0.2rem;    
     font-size: 0.9rem;
     font-weight: bold;
     width: 90%;

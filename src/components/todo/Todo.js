@@ -18,7 +18,7 @@ const ToDo = props => {
   return (
     <div className="ToDo">
       <div className="td-top">
-        <h2>{todo.name}</h2>
+        <h1>{todo.name}</h1>
         <div className="td-x cfb" onClick={handleDelete}>X</div>
       </div>
       <p>{todo.text}</p>

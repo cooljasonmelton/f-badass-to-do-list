@@ -12,7 +12,7 @@ const ToDoContainer = props => {
     const { topic, topics, getTopics, setTopic } = props
 
     return (
-        <div className="ToDoContainer cfb">
+        <div className="ToDoContainer">
             <div className="todo-c">
                 {topic.todos && topic.todos.map(todo => {
                     return <ToDo key={`todo-${todo.id}`} todo={todo} getTopics={getTopics} setTopic={setTopic}/>

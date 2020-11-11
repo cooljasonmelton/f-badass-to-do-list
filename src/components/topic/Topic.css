@@ -1,0 +1,19 @@
+.TopicContainer {
+    width: 100%;
+    display: flex;
+}
+
+.Topic {
+    margin: 1rem;
+    box-shadow: 1px 2px 2px #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #FF206E;
+    cursor: pointer;
+}
+.Topic:hover {
+    background-color: #E0004F;
+    color: #EBEBEB;
+    box-shadow: 1px 2px 2px #EBEBEB;
+
+}

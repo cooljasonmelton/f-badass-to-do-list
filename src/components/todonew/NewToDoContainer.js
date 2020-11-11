@@ -12,9 +12,22 @@ const NewToDoContainer = props => {
     const [details, setDetails] = useState("")
     const [importance, setImportance] = useState(1)
 
+    const reqObj = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            topicId: fTopic,
+            name: toDo,
+            text: details,
+            importance: importance
+        })
+    }
+
     const handleSubmit = e => {
         e.preventDefault()
-        console.log('submit')
+        fetch('http://localhost:3000/topics', reqObj)
+        .then(r=>r.json())
+        .then(data => console.log(data))
     }
 
     return (

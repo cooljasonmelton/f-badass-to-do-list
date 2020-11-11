@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //styling
 import './App.css';
@@ -9,12 +9,13 @@ import TopicContainer from './components/topic/TopicContainer';
 import ToDoContainer from './components/todo/ToDoContainer';
 
 const App = () => {
+  const [topic, setTopic] = useState({})
+  console.log(topic)
   return (
     <div className="App">
       <Menu/>
-      <TopicContainer/>
-      <ToDoContainer/>
-
+      <TopicContainer setTopic={setTopic}/>
+      <ToDoContainer topic={topic}/>
     </div>
   );
 }

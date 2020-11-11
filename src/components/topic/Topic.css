@@ -1,1 +1,9 @@
-.TopicContainer {}
+.TopicContainer {
+    width: 100%;
+    display: flex;
+}
+
+.TopicContainer > button {
+    margin: 1rem;
+    padding: 0.4rem;
+}

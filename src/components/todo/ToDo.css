@@ -1,6 +1,11 @@
 .ToDoContainer{
+    display: flex;
+}
+
+.todo-c{
+    width: 75%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .ToDo{

@@ -6,11 +6,10 @@ import './NewToDo.css';
 // components
 
 const NewToDoContainer = props => {
-    const { topic } = props
 
     return (
         <div className="NewToDoContainer">
-
+            test
         </div>
     );
 }

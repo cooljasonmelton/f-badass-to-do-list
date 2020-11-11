@@ -5,15 +5,21 @@ import './ToDo.css';
 
 // components
 import ToDo from './ToDo'
+import NewToDoContainer from '../todonew/NewToDoContainer';
+
 
 const ToDoContainer = props => {
     const { topic } = props
 
     return (
         <div className="ToDoContainer">
-            {topic.todos && topic.todos.map(todo => {
-                return <ToDo key={`todo-${todo.id}`} todo={todo} />
-            })}
+            <div className="todo-c">
+                {topic.todos && topic.todos.map(todo => {
+                    return <ToDo key={`todo-${todo.id}`} todo={todo} />
+                })}
+            </div>
+            <NewToDoContainer/>
+            
         </div>
     );
 }

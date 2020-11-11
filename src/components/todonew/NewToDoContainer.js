@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //styling
 import './NewToDo.css';
@@ -6,40 +6,48 @@ import './NewToDo.css';
 // components
 
 const NewToDoContainer = props => {
-    const { topics } = props
+    const { topics } = props;
+    const [fTopic, setFTopic] = useState(1)
+    const [toDo, setToDo] = useState("")
+    const [details, setDetails] = useState("")
+    const [importance, setImportance] = useState(1)
 
+    const handleSubmit = e => {
+        e.preventDefault()
+        console.log('submit')
+    }
 
     return (
-        <form className="NewToDoContainer">
+        <form className="NewToDoContainer" onSubmit={handleSubmit}>
             <h1>Create To Do</h1>
             <label>
-                Topic:
+                topic:
                 <br/>
-                <select>
-                    {topics.map(tpc => <option key={`s-${tpc.id}`} value={tpc.name}>{tpc.name}</option>)}
+                <select value={fTopic} onChange={e=>setFTopic(e.target.value)}>
+                    {topics.map(tpc => <option key={`s-${tpc.id}`} value={tpc.id}>{tpc.name}</option>)}
                 </select>
             </label>
             <label>
-                To Do:
+                to do:
                 <br/>
-                <input type="text" name="name" />
+                <input type="text" name="name" value={toDo} onChange={e => setToDo(e.target.value)} />
             </label>
             <label>
-                Details:
+                details:
                 <br/>
-                <textarea type="text" name="text" />
+                <textarea type="text" name="text" value={details} onChange={e => setDetails(e.target.value)}/>
             </label>
             <label>
-                Importance: 
-                <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                importance: 
+                <select value={importance} onChange={e=>setImportance(e.target.value)}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
                 </select>
             </label>
-            <input className="sub-but" type="submit" value="Create" />
+            <input className="sub-but" type="submit" value="create" />
         </form>
     );
 }

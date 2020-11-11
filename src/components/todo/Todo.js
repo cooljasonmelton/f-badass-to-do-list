@@ -22,7 +22,7 @@ const ToDo = props => {
         <div className="td-x cfb" onClick={handleDelete}>X</div>
       </div>
       <p>{todo.text}</p>
-      <p><b>importance:</b> {todo.importance}</p>
+      {/* <p><b>importance:</b> {todo.importance}</p> */}
     </div>
   );
 }

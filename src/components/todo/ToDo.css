@@ -9,20 +9,18 @@
 }
 
 .ToDo{
-    margin: 2rem;
-    border-radius: 1rem;
-    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 2px #FFFFFF;
+
+    padding: 1rem;
     background-color: #FBFF12;
 
-    margin: 1rem;
-    box-shadow: 1px 2px 2px #FFFFFF;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    cursor: pointer;
     color: #0C0F0A;
+    cursor: pointer;
 }
 
-.ToDo:hover {
+/* .ToDo:hover {
     background-color: #DDE000;
     box-shadow: 1px 2px 2px #EBEBEB;
-}
+} */

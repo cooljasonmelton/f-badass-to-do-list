@@ -1,0 +1,60 @@
+.NewToDoContainer{
+    width: 25%;
+    height: 50%;
+    background-color: #41EAD4;
+    margin: 1rem;
+
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 2px #FFFFFF;
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #084A41;
+}
+
+.NewToDoContainer > h2 {
+    padding-top: 2rem;
+}
+.NewToDoContainer > label{
+    margin: 0.5rem;    
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 90%;
+}
+
+.NewToDoContainer > label > input {
+    padding: 0.5rem;
+    width: 90%;
+}
+
+.NewToDoContainer > label > textarea {
+    padding: 0.5rem;
+    width: 90%;
+}
+.NewToDoContainer > label > select {
+}
+
+
+.sub-but {
+    margin: 1rem;
+
+    box-shadow: 1px 2px 2px #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+
+    width: 25%;
+    padding: 0.5rem;
+    background-color: #FF206E;
+
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.sub-but:hover {
+    background-color: #E0004F;
+    color: #EBEBEB;
+    box-shadow: 1px 2px 2px #EBEBEB;
+}

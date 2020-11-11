@@ -1,6 +1,5 @@
 .NewToDoContainer{
     width: 25%;
-    height: 50%;
     background-color: #41EAD4;
     margin: 1rem;
 
@@ -11,14 +10,14 @@
     flex-direction: column;
     align-items: center;
 
-    color: #084A41;
+    color: #0C0F0A;
 }
 
-.NewToDoContainer > h2 {
+.NewToDoContainer > h1 {
     padding-top: 2rem;
 }
 .NewToDoContainer > label{
-    margin: 0.5rem;    
+    margin: 1rem;    
     font-size: 0.9rem;
     font-weight: bold;
     width: 90%;
@@ -26,14 +25,17 @@
 
 .NewToDoContainer > label > input {
     padding: 0.5rem;
+    height: 2rem;
     width: 90%;
 }
 
 .NewToDoContainer > label > textarea {
     padding: 0.5rem;
     width: 90%;
+    height: 10rem;
 }
 .NewToDoContainer > label > select {
+    font-size: 1.2rem;
 }
 
 
@@ -45,7 +47,7 @@
     border-radius: 0.5rem;
 
     width: 25%;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #FF206E;
 
     font-weight: bold;

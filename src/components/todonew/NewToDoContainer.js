@@ -11,9 +11,10 @@ const NewToDoContainer = props => {
 
     return (
         <form className="NewToDoContainer">
-            <h2>New To Do</h2>
+            <h1>Create To Do</h1>
             <label>
                 Topic:
+                <br/>
                 <select>
                     {topics.map(tpc => <option key={`s-${tpc.id}`} value={tpc.name}>{tpc.name}</option>)}
                 </select>

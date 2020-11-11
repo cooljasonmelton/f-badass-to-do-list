@@ -12,9 +12,7 @@ const ToDoContainer = props => {
     return (
         <div className="ToDoContainer">
             {topic.todos && topic.todos.map(todo => {
-                return (
-                    <ToDo key={`todo-${todo.id}`} todo={todo} />
-                )
+                return <ToDo key={`todo-${todo.id}`} todo={todo} />
             })}
         </div>
     );

@@ -18,7 +18,7 @@ const ToDoContainer = props => {
                     return <ToDo key={`todo-${todo.id}`} todo={todo} getTopics={getTopics} setTopic={setTopic}/>
                 })}
             </div>
-            <NewToDoContainer getTopics={getTopics} topics={topics} setTopic={setTopic}/>
+            <NewToDoContainer getTopics={getTopics} topics={topics} setTopic={setTopic} topic={topic}/>
         </div>
     );
 }

@@ -6,7 +6,7 @@ import './NewToDo.css';
 // components
 
 const NewToDoContainer = props => {
-    const { topics, getTopics, setTopic } = props;
+    const { topic, topics, getTopics, setTopic } = props;
     const [fTopic, setFTopic] = useState(1)
     const [toDo, setToDo] = useState("")
     const [details, setDetails] = useState("")
